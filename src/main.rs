@@ -149,5 +149,7 @@ fn main() {
         interactive().unwrap();
     } else if let Some(expression_string) = matches.get_one::<String>("string") {
         exec_expression(&expression_string);
+    } else {
+        interactive().unwrap();
     }
 }
